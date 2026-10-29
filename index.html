@@ -1,145 +1,100 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>Iqra Khan | Academic Website</title>
+  <title>Iqra Khan | PhD Student</title>
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 25px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 17px;
       line-height: 1.7;
-      color: #292929;
-      background-color: #f7f8fa;
+      color: #222;
+      background: #fff;
     }
 
-    header {
-      background-color: #17365d;
-      color: white;
-      text-align: center;
-      padding: 35px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      margin: 5px 0;
-    }
-
-    nav {
-      background-color: #ffffff;
-      padding: 14px 10px;
-      text-align: center;
-      border-bottom: 1px solid #ddd;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    nav a {
-      display: inline-block;
-      margin: 4px 10px;
-      color: #17365d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    main {
-      max-width: 950px;
-      margin: 30px auto;
-      padding: 0 22px;
-    }
-
-    section {
-      background: white;
-      margin-bottom: 24px;
-      padding: 25px 30px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-      scroll-margin-top: 85px;
+    h1 {
+      font-size: 36px;
+      font-weight: normal;
+      margin-bottom: 5px;
     }
 
     h2 {
-      color: #17365d;
-      border-bottom: 2px solid #dce5ef;
-      padding-bottom: 8px;
-      margin-top: 0;
+      font-size: 24px;
+      font-weight: normal;
+      margin-top: 35px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
     }
 
     a {
-      color: #205a96;
+      color: #174a75;
+      text-decoration: none;
     }
 
-    .profile-photo {
-      width: 190px;
-      height: 220px;
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .profile {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-top: 25px;
+    }
+
+    .profile img {
+      width: 175px;
+      height: auto;
       object-fit: cover;
-      object-position: center top;
-      border-radius: 10px;
-      display: block;
-      margin: 0 auto 20px;
-      image-rendering: auto;
+    }
+
+    .intro {
+      flex: 1;
+    }
+
+    .subtitle {
+      margin-top: 0;
+      color: #555;
+    }
+
+    .links {
+      margin-top: 12px;
+    }
+
+    .links a {
+      margin-right: 14px;
+      white-space: nowrap;
     }
 
     ul {
       padding-left: 25px;
     }
 
-    li {
-      margin-bottom: 10px;
-    }
-
-    .talk-list li {
-      margin-bottom: 16px;
-      line-height: 1.7;
-    }
-
-    footer {
-      text-align: center;
-      padding: 22px;
-      background: #17365d;
-      color: white;
-      margin-top: 35px;
-    }
-
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 1.8rem;
+      body {
+        margin-top: 25px;
+        padding: 0 18px;
+        font-size: 16px;
       }
 
-      main {
-        padding: 0 12px;
+      h1 {
+        font-size: 30px;
       }
 
-      section {
-        padding: 20px;
+      .profile {
+        flex-direction: column;
+        gap: 15px;
       }
 
-      nav a {
-        margin: 4px 6px;
-        font-size: 0.9rem;
-      }
-
-      .profile-photo {
-        width: 170px;
-        height: 200px;
+      .profile img {
+        width: 150px;
       }
     }
   </style>
@@ -149,39 +104,70 @@
 
   <header>
     <h1>Iqra Khan</h1>
-    <p>Doctoral Student</p>
-    <p>Philipps-Universität Marburg, Germany</p>
+    <p class="subtitle">PhD Student in Algebraic Combinatorics</p>
   </header>
 
-  <nav>
-    <a href="#about">About Me</a>
-    <a href="#research">Research Interests</a>
-    <a href="#education">Education</a>
-    <a href="#conferences">Conferences and Talks</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
   <main>
+    <section class="profile">
+      <img src="./iqra%20photo.jpeg" alt="Iqra Khan">
 
-    <!-- ABOUT -->
-    <section id="about">
-      <h2>About Me</h2>
-      <img
-        src="./iqra%20photo.jpeg"
-        alt="Iqra Khan"
-        class="profile-photo"
-      >
-      <p>
-      
-      I am a PhD candidate at Philipps-Universität Marburg, Germany, under the supervision of <a href="https://www.mathematik.uni-marburg.de/~welker/">Prof. Volkmar Welker</a>
-      specializing in Algebraic Combinatorics.
-        
-      </p>
+      <div class="intro">
+        <p>
+          I am a PhD student in Algebraic Combinatorics at
+          <a href="https://www.uni-marburg.de/en"
+             target="_blank" rel="noopener noreferrer">
+            Philipps-Universität Marburg
+          </a>, Germany,
+          under the supervision of
+          <a href="https://www.mathematik.uni-marburg.de/~welker/"
+             target="_blank" rel="noopener noreferrer">
+            Professor Volkmar Welker
+          </a>.
+        </p>
+
+        <p>
+          My research interests include algebraic combinatorics,
+          simplicial complexes, posets, lattice polytopes,
+          toric geometry, and Ehrhart theory.
+        </p>
+
+        <p>
+          I am interested in understanding the combinatorial and
+          algebraic structures underlying these topics.
+        </p>
+
+        <div class="links">
+          <a href="Iqra_Khan_CV%20Mara.pdf" target="_blank"
+             rel="noopener noreferrer">CV</a>
+
+          <a href="mailto:iqrak9871@gmail.com">Email</a>
+
+          <a href="https://www.linkedin.com/in/iqra-khan-6a7956ba/"
+             target="_blank" rel="noopener noreferrer">LinkedIn</a>
+
+          <a href="https://github.com/iqra14-eng"
+             target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="research">
+      <h2>Research Interests</h2>
 
       <p>
-        My research interests lie in algebraic combinatorics and its connections with algebraic geometry. In particular, I am interested in simplicial complexes, 
-        partially ordered sets (posets), lattice polytopes, toric geometry, Ehrhart theory, and related topics in combinatorics.
+        My research focuses on Algebraic Combinatorics, particularly
+        the study of simplicial complexes, partially ordered sets
+        (posets), lattice polytopes, toric geometry, and Ehrhart theory.
       </p>
+    </section>
+
+    <!-- Add the Education section below this line -->
+
+  </main>
+
+</body>
+</html>
+
      
     </section>
 
